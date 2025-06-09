@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Inter400";
+  src: local("Inter"),
+    url(~assets/fonts/Inter/Inter-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Inter500";
+  src: local("Inter"),
+    url(~assets/fonts/Inter/Inter-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Inter600";
+  src: local("Inter"),
+    url(~assets/fonts/Inter/Inter-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Inter700";
+  src: local("Inter"),
+    url(~assets/fonts/Inter/Inter-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Inter800";
+  src: local("Inter"),
+    url(~assets/fonts/Inter/Inter-ExtraBold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter900";
+  src: local("Inter"),
+    url(~assets/fonts/Inter/Inter-Black.ttf) format("truetype");
+}
+
+body::-webkit-scrollbar {
+  width: 7px;
+}
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #492293;
+  overflow-x: hidden;
+  --scrollbar-height: 75px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #492293;
+  border-radius: 6px;
+  border: 1px solid #492293;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: black !important;
+  -webkit-text-size-adjust: inherit !important;
+}
+
+.v-tabs-slider {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50px !important;
+}
+.v-tabs-slider-wrapper {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  justify-items: center !important;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  -ms-flex-line-pack: center !important;
+  align-content: center !important;
+  bottom: 4px !important;
+}
+/* .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active), .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-icon, .theme--light.v-tabs > .v-tabs-bar .v-tab:not(.v-tab--active) > .v-btn, .theme--light.v-tabs > .v-tabs-bar .v-tab--disabled:hover {
+  color: blue;
+} */
